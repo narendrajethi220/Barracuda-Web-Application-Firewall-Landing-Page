@@ -1,0 +1,129 @@
+.App {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.home-header {
+  /* border: 2px solid black; */
+  width: 100vw;
+  text-align: right;
+  /* margin: 0.5rem; */
+  /* padding: 0.5rem 1rem 0.5rem 0.5rem; */
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  background-color: #172554;
+  /* */
+}
+.select-option {
+  background-color: #1e1b4b;
+
+  text-align: center;
+  margin-bottom: 0.8rem;
+}
+
+.home-header select {
+  /* border: 2px solid yellow; */
+
+  border-radius: 5px;
+  /* padding: 0.1rem; */
+  border: none;
+}
+.modal-section {
+  flex-wrap: wrap;
+  width: 100vw;
+  height: auto;
+  /* border: 2px solid white; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  /* Vertical centering */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+}
+
+.modal-section h1 {
+  color: white;
+  font-size: 2.3em;
+  /* line-height: 2em; */
+}
+.modal-intro span {
+  font-weight: 300;
+}
+.home-title {
+  /* border: 2px solid black; */
+  width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-modal {
+  background-color: #f9fafb;
+  border: 2px solid #f9fafb;
+  width: 35%;
+  margin-top: 2rem;
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+.login {
+  margin-left: 2rem;
+}
+.modal-para {
+  /* margin-left: 3.8rem; */
+  font-size: 0.8rem;
+}
+.input-field {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.input-field input {
+  width: 95%;
+  height: 5vh;
+  margin-bottom: 1rem;
+  font-size: x-large;
+  border: 1px solid rgb(162, 151, 151);
+}
+.btn {
+  width: 95%;
+  text-align: right;
+}
+.sign-in {
+  /* width: 25%; */
+  border: 1px solid rgb(162, 151, 151);
+  text-align: center;
+  padding: 0.5rem;
+  /* margin-left: 66%; */
+  margin: 1rem auto;
+  font-size: 1.5rem;
+  background-color: #0284c7;
+  color: white;
+  border-radius: 5px;
+}
+.sign-in:hover {
+  cursor: pointer;
+}
+
+/* Responsive */
+@media only screen and (max-width: 480px) {
+  .login-modal {
+    width: 80%;
+  }
+  .input-field input {
+    width: 90%;
+    height: 5vh;
+    margin-bottom: 1rem;
+    font-size: x-large;
+    border: 1px solid rgb(162, 151, 151);
+  }
+  .btn {
+    width: 98%;
+    text-align: right;
+  }
+}
